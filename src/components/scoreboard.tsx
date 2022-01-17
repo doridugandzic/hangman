@@ -23,7 +23,6 @@ function Scoreboard(props: IScoreboardProps) {
 
         for (let i = 0; i < scoreboard.length; i++) {
             scoreboard[i].score = calcScores((scoreboard[i].duration / 100), scoreboard[i].length, scoreboard[i].uniqueCharacters, scoreboard[i].errors);
-            console.log(scoreboard[i].score)
         }
         //await scoreboard.sort((a: { score: number; }, b: { score: number; }) => (a.score > b.score) ? 1 : ((b.score > a.score) ? -1 : 0)).reverse()
 

@@ -76,7 +76,6 @@ function App(props: IAppProps) {
       setInputVal("")
       setEnableSubmit(true)
     } else {
-      console.log("whachu doin my fucko")
       setMistakes(mistakes + 1);
       setInputVal("")
       setEnableSubmit(true)
@@ -121,7 +120,6 @@ function App(props: IAppProps) {
     setQuoteSecret(quoteforthe5thtime)
 
     if (!quoteforthe5thtime.includes('_')) {
-      console.log('YOU WON FUCKO')
       var endDate = getDate();
       setEndTime(endDate)
       const timeToEnd: any = timeToFinish();
